@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web bán quần áo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/14d9b9d9a2.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web bán quần áo</title>
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="images/logoivy.png">
+    </div>
+    <div class="menu">
+        <li><a href="category.html">Nữ</a>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Áo</a></li>
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Áo vest</a></li>
+            </ul>
+        </li>
+        <li><a href="category.html">Nam</a></li>
+        <li><a href="category.html">Trẻ Em</a></li>
+        <li><a href="category.html">Fisrt Sale</a></li>
+        <li><a href="category.html">Hot Items</a></li>
+        <li><a href="category.html">Bộ Sưu Tập</a></li>
+        <li><a href="category.html">Tin Tức</a></li>
+        <li><a href="category.html">Thông Tin</a></li>
+    </div>
+    <div class="others">
+        <li><input placeholder="Tìm kiếm" type="text"> <a class="fa-solid fa-magnifying-glass"></a></li>
+        <li><a class="fa-solid fa-paw"></a></li>
+        <li><a class="fa-regular fa-user"></a></li>
+        <li><a href="cart.html" class="fa-solid fa-bag-shopping"></a></li>
+    </div>
+   </header>
+
+<!---------------- slider ------------------->
+<section id="slider">
+<div class="aspect-ratio-169">
+    <img src="images/slide1.png">
+    <img src="images/slide2.png">
+</div>
+<div class="dot-container">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+</div>
+</section>
+<!----------------- app ------------------->
+<section class="app-contaner">
+    <p>Tải ứng dụng Ivy Moda</p>
+    <div class="app-google">
+        <img src="images/appstore.png">
+        <img src="images/googleplay.png">
+    </div>
+    <p>Nhận bản tin từ Ivy Moda</p>
+    <input type="text" placeholder="Nhập emal của bạn...">
+</section>
+
+<!-- ------------------------footer-------------------- -->
+<div class="footer-top">
+    <li><a href=""><img src="images/dathongbao.png" ></a></li>
+    <li><a href="">Liên Hệ</a></li>
+    <li><a href="">Tuyển Dụng</a></li>
+    <li><a href="">Giới Thiệu</a></li>
+    <li>
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-twitter"></a>
+        <a href="" class="fa-brands fa-youtube"></a>
+    </li>
+</div>
+<div class="footer-center">
+    <p>WebSite chuyên cung cấp các loại thời trang với chất lượng và mức giá ưu đãi</p>
+</div>
+<div class="footer-bottom">
+    Copyright © 2024 Ivymoda.com All rights reserved.
+</div>
+</body> 
+<script>
+    const header = document.querySelector("header")
+window.addEventListener("scroll", function(){
+    x = window.pageYOffset
+    if(x > 0) {
+        header.classList.add("sticky")
+    }
+    else {
+        header.classList.remove("sticky")
+    }
+})
+
+const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+const imgContainer = document.querySelector('.aspect-ratio-169')
+const dotItem = document.querySelectorAll(".dot")
+let imgNumber = imgPosition.length
+let index = 0
+//console.log(imgPosition)
+imgPosition.forEach(function(image,index){
+    image.style.left = index*100 + "%"
+    dotItem[index].addEventListener("click",function(){
+    slider(index)
+    })
+})
+function imgSlide (){
+    index++;
+    console.log(index)
+    if(index >= imgNumber) {index = 0}
+    slider(index)
+}
+function slider(index){
+    imgContainer.style.left = "-" +index*100+ "%"
+    const dotActive = document.querySelector('.active')
+    dotActive.classList.remove("active")
+    dotItem[index].classList.add("active")
+}
+setInterval(imgSlide, 5000)
+</script>
+</html>

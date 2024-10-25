@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web bán quần áo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/14d9b9d9a2.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Web bán quần áo</title>
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <a href="giaodien.html"><img src="images/logoivy.png"></a> 
+    </div>
+    <div class="menu">
+        <li><a href="category.html">Nữ</a>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Áo</a></li>
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Áo vest</a></li>
+            </ul>
+        </li>
+        <li><a href="category.html">Nam</a></li>
+        <li><a href="category.html">Trẻ Em</a></li>
+        <li><a href="category.html">Fisrt Sale</a></li>
+        <li><a href="category.html">Hot Items</a></li>
+        <li><a href="category.html">Bộ Sưu Tập</a></li>
+        <li><a href="category.html">Tin Tức</a></li>
+        <li><a href="category.html">Thông Tin</a></li>
+    </div>
+    <div class="others">
+        <li><input placeholder="Tìm kiếm" type="text"> <a class="fa-solid fa-magnifying-glass"></a></li>
+        <li><a class="fa-solid fa-paw"></a></li>
+        <li><a class="fa-regular fa-user"></a></li>
+        <li><a href="cart.html" class="fa-solid fa-bag-shopping"></a></li>
+    </div>
+   </header>
+<!--------------------cart ---------------->
+<section class="cart">
+    <div class="container">
+       <div class="cart-top-wrap">
+        <div class="cart-top">
+            <div class="cart-top-cart cart-top-item">
+                <i class="fa-solid fa-cart-shopping "></i>
+            </div>
+            <div class="cart-top-address cart-top-item">
+                <i class="fa-solid fa-location-dot "></i>
+            </div>
+            <div class="cart-top-payment cart-top-item">
+                <i class="fa-solid fa-money-check "></i>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="container">
+        <div class="cart-content row">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Màu</th>
+                        <th>Size</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xoá</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/sp1.jpg" alt=""></td>
+                        <td><p>Áo Polo Trắng</p></td>
+                        <td><img src="images/spcolor.png" alt=""></td>
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>600.000 <sup>đ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/sp2.jpg" alt=""></td>
+                        <td><p>Áo polo sọoc Đen Trắng</p></td>
+                        <td><img src="images/spcolor.png" alt=""></td>
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>600.000 <sup>đ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">Tổng tiền giỏ hàng</th>
+                    </tr>
+                    <tr>
+                        <td>Tổng sản phẩm</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tổng tiền hàng</td>
+                        <td><p>600.000 <sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td>Tạm Tính</td>
+                        <td><p style="color: black; font-weight: bold;">600.000 <sub>đ</sub></p></td>
+                    </tr>
+                </table>
+                <div class="cart-content-right-text">
+                    <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000đ</p>
+                    <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">131.000đ</span> để được miễn phí SHIP</p>
+                </div>
+                <div class="cart-content-right-button">
+                    <button>TIẾP TỤC MUA SẮM</button>
+                    <a href="delivery.html"><button>THANH TOÁN</button></a>
+                </div>
+                <div class="cart-content-right-dangnhap">
+                    <p>TÀI KHOẢN IVY</p>
+                    <p>Hãy <a href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------- app ------------------->
+<section class="app-contaner">
+    <p>Tải ứng dụng Ivy Moda</p>
+    <div class="app-google">
+        <img src="images/appstore.png">
+        <img src="images/googleplay.png">
+    </div>
+    <p>Nhận bản tin từ Ivy Moda</p>
+    <input type="text" placeholder="Nhập emal của bạn...">
+</section>
+
+<!-- ------------------------footer-------------------- -->
+<div class="footer-top">
+    <li><a href=""><img src="images/dathongbao.png" ></a></li>
+    <li><a href="">Liên Hệ</a></li>
+    <li><a href="">Tuyển Dụng</a></li>
+    <li><a href="">Giới Thiệu</a></li>
+    <li>
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-twitter"></a>
+        <a href="" class="fa-brands fa-youtube"></a>
+    </li>
+</div>
+<div class="footer-center">
+    <p>WebSite chuyên cung cấp các loại thời trang với chất lượng và mức giá ưu đãi</p>
+</div>
+<div class="footer-bottom">
+    Copyright © 2024 Ivymoda.com All rights reserved.
+</div>
+
+</body> 
+</html>
